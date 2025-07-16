@@ -1,0 +1,178 @@
+<!-- tailwind can be installed or can be used by tailwind cdn link that will be pasted in 
+ the html file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- this is the tailwind css cdn link -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
+</head>
+<body class="bg-white">
+
+    <!-- navbar -->
+    <nav class="bg-white shadow-lg p-4 mb-5 flex justify-between">
+        <h1 class="text-2xl font-bold">PAVAN PRAKASH <span class="text-emerald-500">LELLA</span></h1>
+        <span class="md:invisible "><i class="fa-solid fa-bars"></i></span>
+        <ul class="md:flex space-x-4 hidden md:block">
+            <li><a href="#" class="text-emerald-500 hover:underline">Home</a></li>
+            <li><a href="#" class="text-emerald-500 hover:underline">About</a></li>
+            <li><a href="#" class="text-emerald-500 hover:underline">Contact</a></li>
+            <li><a href="#" class="text-emerald-500 hover:underline">Footer</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero section -->
+    <section class="bg-white p-8">
+        <h1 class="text-4xl font-bold text-center">
+            Welcome to my portfolio
+        </h1>
+        <p class="text-lg text-gray-600 text-center">Turning ideas into interactive experiences.</p>
+        <div class="text-center">
+            <button class="mt-6 bg-emerald-100 text-emerald-600
+            px-6 py-2 rounded-lg hover:bg-emerald-700 hover:text-white hover:scale-105 transition-all">Download my Resume</button>
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section class="flex flex-col md:flex-row items-center bg-white px-8">
+        <div class="mt-4 md:mt-0 md:ml-6 text-center md:text-left">
+            <img src="myimage.jpg" class="h-32 w-32 rounded-full object-cover border-green-300 border-4 mx-auto md:h-50 md:w-50">
+            <h2 class="text-2xl font-bold text-gray-800">About Me</h2>
+            <p class="text-gray-600 mt-3 text-justify">I’m Pavan, a passionate Electrical Engineering student exploring
+                the world of web development and building projects that bring ideas to life. I love learning new technologies, 
+                working with JavaScript, APIs, and creating clean, interactive web apps. I’m always excited to collaborate 
+                on projects to gain experience and contribute to the tech community while sharpening my development skills.
+            </p>
+            <div class="mt-4 space-x-1 space-y-1">
+                <h2>Skills</h2>
+                <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-2 rounded-full text-sm mr-2">HTML</span>
+                <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-2 rounded-full text-sm mr-2">CSS</span>
+                <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-2 rounded-full text-sm mr-2">TAILWIND-CSS</span>
+                <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-2 rounded-full text-sm mr-2">JAVASCRIPT</span>
+            </div>
+
+            <!-- education section with modified colors -->
+            <section class="bg-white py-12 px-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Education</h2>
+                
+                <!-- Grid for responsive cards -->
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- School -->
+                    <div class="bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">School</h3>
+                            <p class="text-gray-700">Naveena Vidyaniketan High School</p>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">2010 - 2022</p>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Intermediate</h3>
+                            <p class="text-gray-700">Sri Chaitanya Junior College</p>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">2022 - 2024</p>
+                    </div>
+
+                    <!-- College -->
+                    <div class="bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xl shadow-lg p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">College</h3>
+                            <p class="text-gray-700">Indian Institute of Technology Jodhpur</p>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">2024 - Present</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="p-8 bg-white">
+        <h2 class="text-2xl font-bold text-center mb-8">Project</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- project cards -->
+            <div class="bg-white shadow-lg hover:scale-105 transition-all rounded-lg overflow-hidden p-6 text-center">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Crypto-Dashboard</h3>
+                <p>Track real-time crypto prices with a clean, interactive dashboard. Visualize live market data for multiple coins easily.</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <span class="text-sm text-gray-500">JAVASCRIPT</span>
+                    <button class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-700">View</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg hover:scale-105 transition-all rounded-lg overflow-hidden p-6 text-center">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Weather-App</h3>
+                <p>Get real-time weather updates for any city with a clean UI. Shows temperature, conditions, and more at a glance.</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <span class="text-sm text-gray-500">JAVASCRIPT</span>
+                    <button class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-700">View</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg hover:scale-105 transition-all rounded-lg overflow-hidden p-6 text-center">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Chatgpt-clone</h3>
+                <p>AI-powered chatbot interface for instant, smart responses. Simulates human-like conversation for user questions.</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <span class="text-sm text-gray-500">PYTHON</span>
+                    <button class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-700">View</button>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg hover:scale-105 transition-all rounded-lg overflow-hidden p-6 text-center">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Netflix-clone</h3>
+                <p>Streamlined movie browsing and responsive streaming UI. Explore categories and preview content like the real Netflix.</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <span class="text-sm text-gray-500">CSS</span>
+                    <button class="bg-emerald-500 text-white px-4 py-2 rounded hover:bg-emerald-700">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="p-8 bg-white">
+        <h2 class="text-2xl font-bold text-center">Contact Me</h2>
+        <div class="max-w-md mx-auto">
+            <form action="" class="space-y-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border" placeholder=" Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border" placeholder=" Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border" placeholder=" Your Message">
+                </div>
+                <button type="submit" class="w-full bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-all py-2 ease-in-out">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-800 text-gray-300 p-8">
+        <div class="text-center">
+            <h3 class="font-bold text-lg text-center">Connect with me</h3>
+            <div class="text-gray-300 mt-4 space-x-4">
+                <a href="https://www.linkedin.com/in/pavan-prakash-lella-a37245326/" class="hover:text-gray-200">LinkedIn</a>
+                <a href="https://github.com/Pavan6559" class="hover:text-gray-200">GitHub</a>
+                <a href="" class="hover:text-gray-200">Twitter</a>
+            </div>
+            <p class="mt-4 text-sm text-gray-400">Copyright © 2025 Tailwind Labs Inc. Trademark Policy</p>
+        </div>
+    </footer>
+
+</body>
+</html>
